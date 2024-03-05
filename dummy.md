@@ -1,0 +1,67 @@
+"person": [
+    {
+      "id": "1",
+      "firstname": "John",
+      "lastname": "Doe",
+      "age": 35,
+      "height": "6'2\"",
+      "weight": "180 lbs",
+      "photoUrl": "https://example.com/johndoe.jpg",
+      "gender": "M",
+      "address": "123 Main Street, Anytown, USA",
+      "bloodGroup": "A+",
+      "genoType": "AA"
+    },
+    {
+      "id": "2",
+      "firstname": "Jane",
+      "lastname": "Smith",
+      "age": 28,
+      "height": "5'6\"",
+      "weight": "140 lbs",
+      "photoUrl": "https://example.com/janesmith.jpg",
+      "gender": "F",
+      "address": "456 Elm Street, Othertown, USA",
+      "bloodGroup": "O-",
+      "genoType": "OO"
+    },
+    {
+      "id": "3",
+      "firstname": "Michael",
+      "lastname": "Johnson",
+      "age": 42,
+      "height": "5'10\"",
+      "weight": "200 lbs",
+      "photoUrl": "https://example.com/michaeljohnson.jpg",
+      "gender": "M",
+      "address": "789 Oak Street, Anothertown, USA",
+      "bloodGroup": "B+",
+      "genoType": "BB"
+    },
+    {
+      "id": "4",
+      "firstname": "Emily",
+      "lastname": "Brown",
+      "age": 31,
+      "height": "5'4\"",
+      "weight": "120 lbs",
+      "photoUrl": "https://example.com/emilybrown.jpg",
+      "gender": "F",
+      "address": "101 Pine Street, Yetanothertown, USA",
+      "bloodGroup": "AB-",
+      "genoType": "AB"
+    },
+    {
+      "id": "5",
+      "firstname": "David",
+      "lastname": "Martinez",
+      "age": 25,
+      "height": "5'9\"",
+      "weight": "160 lbs",
+      "photoUrl": "https://example.com/davidmartinez.jpg",
+      "gender": "M",
+      "address": "202 Maple Street, Finaltown, USA",
+      "bloodGroup": "A-",
+      "genoType": "AO"
+    }
+  ],

@@ -1,0 +1,20 @@
+.homeContainer {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.cont {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+}
+
+.open {
+  transform: translateY(200px);
+}
+
+.close {
+  transform: translateY(0px);
+}

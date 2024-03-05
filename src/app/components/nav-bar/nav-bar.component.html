@@ -1,0 +1,64 @@
+<mat-nav-list class="mat-nav-list">
+  <ul class="list-container">
+    <li
+      class="list-item"
+      [routerLinkActiveOptions]="{ exact: true }"
+      routerLinkActive="active-link"
+      routerLink=""
+      mat-raised-button
+    >
+      Home
+    </li>
+    <li
+      class="list-item"
+      [routerLinkActiveOptions]="{ exact: true }"
+      routerLinkActive="active-link"
+      routerLink="/add-record"
+      mat-raised-button
+    >
+      Add Record
+    </li>
+
+    <li id="menu" (click)="toggleMenu()" class="list-item" mat-raised-button>
+      <mat-icon
+        *ngIf="!isOpen"
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="menu"
+      ></mat-icon>
+
+      <mat-icon
+        *ngIf="isOpen"
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="disabled_by_default"
+      >
+      </mat-icon>
+    </li>
+  </ul>
+</mat-nav-list>
+
+<!-- <div class="mainMenu">
+  <ul class="mobileMenu" *ngIf="isOpen">
+    <li
+      class=""
+      [routerLinkActiveOptions]="{ exact: true }"
+      routerLinkActive="active-link"
+      routerLink=""
+      mat-raised-button
+    >
+      Home
+    </li>
+    <li
+      class=""
+      [routerLinkActiveOptions]="{ exact: true }"
+      routerLinkActive="active-link"
+      routerLink="/add-record"
+      mat-raised-button
+    >
+      Add Record
+    </li>
+  </ul>
+</div> -->
+
+<!-- <router-outlet></router-outlet> -->

@@ -1,0 +1,63 @@
+<section class="record-section">
+  <main class="container">
+    <header>
+      <p>Medical History</p>
+
+    </header>
+
+    <table class="table-container" *ngFor="let record of records">
+      <tbody class="record-item">
+        <tr>
+          <th>Title</th>
+          <td id="title">{{ record.title }}</td>
+        </tr>
+        <tr>
+          <th>Attending Physician</th>
+          <td id="attendingPhysician">{{ record.attendingPhysician }}</td>
+        </tr>
+        <tr>
+          <th>Hospital Name:</th>
+          <td>
+            {{ record.hospitalName }}
+          </td>
+        </tr>
+        <tr>
+          <th>Hospital Location:</th>
+          <td>
+            {{ record.location }}
+          </td>
+        </tr>
+        <tr>
+          <th>Duration of Treatment</th>
+          <td id="durationOfTreatment">{{ record.durationOfTreatment }}</td>
+        </tr>
+        <tr>
+          <th colspan="2">Tests Performed:</th>
+        </tr>
+        <tr>
+          <th>Test Name</th>
+          <td>{{ record.testName }}</td>
+        </tr>
+        <tr>
+          <th>Test Result</th>
+          <td>{{ record.testResult }}</td>
+        </tr>
+        <tr>
+          <th colspan="2">Medication:</th>
+        </tr>
+        <tr>
+          <th>Namnne</th>
+          <td>{{ record.medicationName }}</td>
+        </tr>
+        <tr>
+          <th>Dosage</th>
+          <td>{{ record.dosage }}</td>
+        </tr>
+        <tr>
+          <th>Frequency</th>
+          <td>{{ record.frequency }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</section>

@@ -1,0 +1,63 @@
+<section class="add-container">
+  <app-side-menu></app-side-menu>
+  <main  [ngClass]="isOpen ? 'open' : 'close'" class="container">
+    <header class="header">Add a Medical Record</header>
+    <form
+      class="form-container"
+      [formGroup]="infoForm"
+      (ngSubmit)="submitForm()"
+    >
+      <mat-form-field *ngFor="let input of boiDataInputs" class="form-input">
+        <mat-label>{{ input.labelText }}</mat-label>
+        <input
+          matInput
+          name="{{ input.name }}"
+          formControlName="{{ input.name }}"
+          [class.invalid]="
+            infoForm.get(input.name)?.invalid &&
+            (infoForm.get(input.name)?.dirty ||
+              infoForm.get(input.name)?.touched)
+          "
+        />
+        <span
+          *ngIf="
+            infoForm.get(input.name)?.hasError('required') &&
+            (infoForm.get(input.name)?.dirty ||
+              infoForm.get(input.name)?.touched)
+          "
+          class="error"
+          >This field is required.</span
+        >
+      </mat-form-field>
+      <div class="footer-submitButton-container">
+        <button [disabled]="infoForm.valid" type="submit" mat-raised-button>
+          submit
+        </button>
+      </div>
+
+      <!-- <aside *ngIf="input.subInputs">
+      <main>
+        <nav class="subinputs-nav">
+          <header class="subInputs-header">{{ input.title }}</header>
+         <button class="subInputs-button">
+            {{ input.buttonText }}
+          </button> 
+        </nav> -->
+      <!-- <ul *ngFor="let subInputs of input.subInputs">
+          <li>
+            <mat-form-field class="form-input">
+              <mat-label>{{ subInputs.labelText }}</mat-label>
+              <input
+                matInput
+                name="{{ subInputs.name }}"
+                placeholder="{{ subInputs.placeholder }}"
+              />
+            </mat-form-field>
+          </li>
+        </ul> -->
+      <!-- </main>
+    </aside> -->
+    </form>
+    <footer class="footer-submitButton-container"></footer>
+  </main>
+</section>

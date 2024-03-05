@@ -1,0 +1,24 @@
+<div class="mainMenu" [ngClass]="isOpen ? 'show' : 'hide'">
+  <ul class="mobileMenu">
+    <li
+      class="perMenu"
+      routerLinkActive="active-link"
+      routerLink=""
+      mat-raised-button
+    >
+      Home
+
+      <span>
+        <mat-icon fontIcon="home"> </mat-icon>
+      </span>
+    </li>
+    <li
+      class="perMenu"
+      routerLinkActive="active-link"
+      routerLink="/add-record"
+      mat-raised-button
+    >
+      Add Record <span><mat-icon fontIcon="add"></mat-icon></span>
+    </li>
+  </ul>
+</div>

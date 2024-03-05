@@ -1,0 +1,47 @@
+.table-container {
+  width: 80%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  padding-top: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding: 20px 0px;
+  border-bottom: 2px solid blue;
+  justify-content: space-between;
+}
+
+header p {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+header button {
+}
+
+
+@media  (min-width:320px) and (max-width:480px) {
+    .table-container {
+        width: 95%;
+
+    }
+}
